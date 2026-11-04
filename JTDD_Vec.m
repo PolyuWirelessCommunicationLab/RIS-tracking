@@ -434,7 +434,19 @@ function [out] = JTDD_Vec(Y, param)
 
        
         %% extrinsic messages (theta) for fusion (ext(theta -> p_theta) = q(theta)/ext(p_theta -> theta))
-        
+
+
+        %% extrinsic messages (position) for fusion (ext(theta) => ext(position))
+
+
+        %% position fusion (Gaussian) of BS link and RIS link (no prior information)
+
+
+        %% extrinsic messages (velocity) for fusion
+
+
+        %% transmit signal fusion
+
 
         t_out               = t_out + 1;
         loc_error(t_out)    = norm(p_ext_Fu_lt-p_true,'fro');
